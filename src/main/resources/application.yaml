@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: library-management-system
+
+  datasource:
+    platform: postgres
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/library_managementdb
+    username: ${USERNAME}
+    password: ${PASSWORD}
+
+  flyway:
+    enabled: true
+    validate-on-migrate: true
+
+
+
+logging:
+  level:
+    org:
+      springframework:
+        security: TRACE
